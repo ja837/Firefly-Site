@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+*, *::before, *::after { 
+    box-sizing:border-box;
+    }
+    
+    body{ 
+    font-family: 'Poppins', sans-serif;
+    margin:0; 
+    padding:0;  
+    }
+
+    h1{ 
+      font-family:'Poppins', sans-serif; 
+      font-size:96px;
+    }
+
+    h2{ 
+      font-family:'Poppins', sans-serif; 
+      font-size:64px;
+    }
+
+    h3{ 
+      font-family:'Poppins', sans-serif; 
+      font-size:48px;
+    }
+    
+    .hero-image{
+    background-image: url(Images/HomePage.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+    
+    .hero-text{ 
+    position:absolute;
+    top:50%;
+    left:35%;
+    line-height: 20px;
+    text-align: center;
+    }
+    
+    .container {
+      display: block;
+      gap: 1em;
+    }
+    
+    .navigation{ 
+    background: var(--background);
+    text-align: center; 
+    position: fixed;
+    width:100%;
+    z-index:999;
+    }
+    
+    .nav-toggle{ 
+    display: none
+    }
+    
+    .nav-toggle-label{ 
+    position: absolute; 
+    top:0; 
+    left:0; 
+    margin-left: 1em; 
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    }
+    
+    .nav-toggle-label span{ 
+    color:black;
+    font-size: 1.5em;
+    }
+    
+    nav{ 
+    position: absolute; 
+    text-align: right; 
+    top:100%; 
+    left:0;
+    width:100%;
+    transform:scale(1,0);
+    transition:transform 400ms ease-in-out;
+    transform-origin:top; 
+     
+    }
+
+    .logo{
+      margin-top:25px;
+    }
+    
+    nav ul { 
+    margin:0; 
+    margin-top:25px;
+    padding:0; 
+    list-style:none;
+    }
+    
+    nav li{ 
+    margin-bottom:1em; 
+    margin-left: 1em;
+    }
+    
+    nav a { 
+    color: black; 
+     text-decoration:none; 
+     font-size: 1.2rem;
+      text-transform: uppercase;
+      opacity:0;
+    }
+    
+    nav a:hover{ 
+    color:black;
+    }
+    
+    .nav-toggle:checked ~ nav { 
+    transform:scale(1,1);
+    }
+    
+    .nav-toggle:checked ~ nav a{ 
+    opacity: 1;
+    transition: opacity 250 ease-in-out 250;
+    }
+    
+    /*media query for desk top*/
+    
+    @media screen and (min-width:600px) { 
+      .nav-toggle-label {
+        display:none;
+      }
+      
+       .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1em; }
+      
+      .card{ 
+        padding:1em;
+      }
+      
+      .navigation{
+        display:grid; 
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+      }
+      .logo{ 
+        grid-column: 2/3;
+    }
+      nav{ 
+      all: unset; 
+       grid-column:3/4;
+       display:flex; 
+       justify-content:flex-end;
+       align-items:center; 
+      }
+      nav ul {
+        display:flex; 
+        justify-content: flex-end;
+      }
+      nav li{
+        margin-left:3em; 
+        margin-bottom: 0; 
+      }
+      nav a { 
+       opacity:1; 
+        position: relative;
+      }
+       
+    }
+       
+    
