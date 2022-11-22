@@ -93,6 +93,7 @@
     margin-top:25px;
     padding:0; 
     list-style:none;
+    font-weight:700;
     }
     
     nav li{ 
@@ -130,7 +131,8 @@
       
        .container {
       display: grid;
-      gap: 1em; }
+      margin-bottom: 150px;
+       }
       
       .card{ 
         padding:1em;
@@ -172,13 +174,20 @@
     
     .column {
       flex: 50%;
-      width:720px;
     }
     
     .column-2 {
       flex: 50%;
-      width:720px;
     }
+
+    .column_3 {
+      flex: 50%;
+    }
+    
+    .column-4 {
+      flex: 50%;
+    }
+
 
     button{
   padding: 10px 15px;
@@ -208,13 +217,65 @@
   line-height: 1.4em;
   padding-bottom:40px;
 }
-    .passes-homepage{
-      margin:auto;
+    .homepage{
       text-align: center;
       line-height:1.2em;
     }
 
+    .homepage-text{ 
+      margin: 0 30px;
+      padding-bottom: 20px;
+    }
+
+    .column homepage{ 
+      margin: 0 20px;
+    }
+
+    .form-container {
+      justify-content: center;
+      margin: 0 auto;
+      display: flex;
+      background: #F6E8C2;
+
+    }
+    .form-content {
+      text-align: center;
+    }
     
+    
+    form {
+     
+      padding: 3em;
+      
+    }
+    
+    form div {
+      margin: 15px;
+    }
+    
+    label {
+      line-height: 2.5;
+      font-size: .8em;
+     
+    }
+    
+    form input {
+      padding: 5px;
+      width: 100%;
+      border: none;
+      background: white;
+      text-align: center;
+    }
+    
+    .agree input{
+      width: auto;
+    }
+
     .body{ 
       background-color: #FFFDFA;
     }
+
+.footer{
+background-color: #FFB84F;
+}
+    
