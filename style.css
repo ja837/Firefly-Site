@@ -38,11 +38,26 @@
     background-size: cover;
     position: relative;
     }
+
+    .hero-image-GI{
+      background-image: url(Images/General\ Information.jpg);
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      }
+      .hero-image-experience{
+        background-image: url(Images/Experience.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        }
     
     .hero-text{ 
     position:absolute;
-    top:50%;
-    left:35%;
+    top:40%;
+    left:30%;
     line-height: 20px;
     text-align: center; 
     z-index: 9;
@@ -52,6 +67,18 @@
 
     }
 
+    .section-text{ 
+      position:absolute;
+      top:40%;
+      left:30%;
+      line-height: 100px;
+      text-align: center; 
+      z-index: 9;
+      color:#361A1A;
+      background: rgba(250, 240, 215, .6);
+      padding: 20px;
+  
+      }
   
     
    
@@ -59,6 +86,7 @@
     .container {
       display: grid;
     }
+    
     
     .navigation{ 
     background: var(--background);
@@ -186,6 +214,11 @@
       display: flex;
       align-items: center;
     }
+
+    .row-2 {
+      display: flex;
+     
+    }
     
     .column {
       flex: 50%;
@@ -223,11 +256,20 @@
       background: #FFB84F;
     }
     
+
+.lineup-container{
+  display: grid;
+  background-image: url(Images/Lineup.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
 .line-up-content{
   margin:auto;
   padding:50px;
   text-align: center;
   line-height:1.2em;
+ 
 }
 
 .line-up{
@@ -236,7 +278,35 @@
   line-height: 1.4em;
   padding-bottom:40px;
 }
+
+.homepage-container{
+  display:grid;
+ background-position: 100% 115% ;
+    background-image: url(Images/experience\ homepage.png);
+    background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+
+.container-gi{
+background-position: 80% 600%;
+background-image: url(Images/gi\ splatter.png);
+    background-repeat: no-repeat;
+}
+
+.general-information{
+text-align: center;
+padding: 50px 0;
+}
+
+.general-information li{
+  line-height: 1.9em;
+  margin: 0 10px;
+
+}
+
     .homepage{
+      padding: 20px;
       text-align: center;
       line-height:1.2em;
     }
@@ -246,10 +316,51 @@
       padding-bottom: 20px;
     }
 
-    .column homepage{ 
-      margin: 0 20px;
+
+    .experience{
+      padding: 20px;
+      text-align: center;
+      line-height:1.2em;
+      
+    
     }
 
+    .experience_2{
+      padding: 20px;
+      text-align: center;
+      line-height:1.2em;
+      background-image: url(Images/Experience\ Pattern\ 2.png);      
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .experience_3{
+      padding: 20px;
+      text-align: center;
+      line-height:1.2em;
+      background-image: url(Images/Experience\ Pattern\ 3.png);      
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom right;
+      
+     
+     
+    }
+
+    .experience-container{
+      background-image: url(Images/Experience\ Pattern\ 1.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: -40;
+      padding-top: 100px;
+      
+      
+      
+      
+    
+      
+    }
+   
     .form-container {
       justify-content: center;
       margin: 0 auto;
@@ -263,8 +374,7 @@
     
     
     form {
-     
-      padding: 3em;
+      padding-bottom: 3em;
       
     }
     
@@ -287,7 +397,7 @@
     }
 
     .agree{
-      margin: 0 500px;
+      margin: 0 450px;
       padding-bottom: 20px;
       line-height: .05;
     }
@@ -308,4 +418,35 @@
       padding:100px 0;
     }
 
-    
+    footer li{
+      list-style: none;
+     }
+
+     footer .media li{ 
+      list-style: none;
+      display:inline;
+      
+      }
+
+      footer .media li a { 
+        padding: 0 10px;
+        
+        }
+        .media{ 
+          margin-top:50px;
+        }
+
+        .twitter{ 
+          width:2%;
+        }
+        .facebook{ 
+          width:1%;
+        }
+      
+        .instagram { 
+          width:2%;
+        }
+      
+        .tiktok{ 
+          width:1.7%;
+        }
